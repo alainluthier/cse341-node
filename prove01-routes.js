@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
     res.write('<head><title>Hello Browser!</Title></head>');
     res.write('<body>');
     res.write('<h1>Wellcome</h1>');
-
+    res.write('<h2>Create User</h2>');
     // Form for "./create-user".
     res.write('<form action="./create-user" method="POST">');
     res.write('<input type="text" name="newUser" placeholder="username">');
@@ -33,7 +33,7 @@ router.get('/users', (req, res, next) => {
         res.write(`<li>${user}</li>`);
     }
     res.write('</ul>');
-    
+    res.write('<a href="/">New User</a></br>')
     res.write('</body>');
     res.write('</html>');
     return res.end(); // Return so you don't execute remaining code outside of if statement
