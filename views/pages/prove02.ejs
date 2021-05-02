@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../includes/header.ejs %>
+</head>
+
+<body>
+  <% include ../includes/nav.ejs %>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1><%= title %></h1>
+    <p>Prove Activity 02</p>
+  </div>
+</div>
+<div class="container">
+  <div style="padding: 0.5rem 2%;" class="prove02">
+    <form action="/prove02/addBook" method="POST">
+      <h3>Add New Book</h3>
+      <label for="">Name</label>
+      <input type="text" name="name" id=""> <br>
+      <label for="">Summary</label>
+      <input type="a" name="summary" id=""> <br>
+      <label for="">Extra Information</label>
+      <input type="a" name="extrainfo" id=""> <br>
+      <button type="submit">Submit</button>
+    </form>
+    <h3>List of Books</h3>
+    <div>
+      <%for (book of books) {%>
+      <section>
+        <h4> <%= book.name %></h4>
+        <p> <%= book.summary %></p>
+        <p> <span><%= book.extraInfo %></span></p>
+      </section>
+      <%}%>
+    </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

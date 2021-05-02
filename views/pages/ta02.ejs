@@ -13,7 +13,32 @@
   </div>
 </div>
 <div class="container">
-  
+  <div>
+    <h2>Add User</h2>
+    <form action="/ta02/addUser" method="post">
+      <label >User Name</label>
+      <input type="text" name="username" id="">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div>
+    <h2>Remove User</h2>
+    <form action="/ta02/removeUser" method="post">
+      <label >User Name</label>
+      <input type="text" name="username" id="">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div>
+    <% if (error!='') {%>
+      <p style="color: red;"> <%= error %> </p>
+      <%}%>
+  </div>
+  <div>
+    <% for (user of users) {%>
+      <p> <%= user %> </p>
+      <%}%>
+  </div>
 </div>
 
 

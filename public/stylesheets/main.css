@@ -41,3 +41,14 @@
   width: 5rem;
   height: 5rem;
 }
+.prove02 input{
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+.prove02 button{
+  margin: 1rem 0;
+}
+.prove02 section{
+  padding-bottom: 1rem;
+}
