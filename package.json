@@ -9,6 +9,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "prove01": "nodemon prove01.js",
+    "prove02": "nodemon prove02.js",
     "test": "node test.js"
   },
   "dependencies": {
