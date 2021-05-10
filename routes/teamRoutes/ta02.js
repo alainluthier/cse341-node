@@ -6,7 +6,7 @@ const router = express.Router();
 var users = ['Adam','Max','Mary'];
 var error='';
 router.get('/',(req, res, next) => {
-    res.render('pages/ta02', { 
+    res.render('pages/teamActivities/ta02', { 
         title: 'Team Activity 02', 
         users:users,
         error:error,
@@ -25,7 +25,7 @@ router.post('/addUser',(req, res, next) => {
         error='';
     }
 
-    res.redirect('/ta02');
+    res.redirect('/teamActivities/02');
 });
 router.post('/removeUser',(req, res, next) => {
     let idx = users.indexOf(req.body.username);
@@ -36,7 +36,7 @@ router.post('/removeUser',(req, res, next) => {
         error = 'Username is not found'
     }
     
-    res.redirect('/ta02');
+    res.redirect('/teamActivities/02');
 });
 
 router.post('/addUser', (req, res, next) => {
@@ -51,7 +51,7 @@ router.post('/addUser', (req, res, next) => {
     }else{
         errors='Empty User';
     }   
-    res.redirect('/ta02');
+    res.redirect('/teamActivities/02');
 });
 router.post('/removeUser', (req, res, next) => {
     const id =users.indexOf(req.body.username)
@@ -61,7 +61,7 @@ router.post('/removeUser', (req, res, next) => {
     }else{
         errors='User Name not found';
     }
-    res.redirect('/ta02');
+    res.redirect('/teamActivities/02');
 });
 
 module.exports = router;
