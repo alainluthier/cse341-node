@@ -29,7 +29,7 @@ https.get(url, (response) => {
 var dataJSON = [];
 router.get('/', (req, res, next) => {
     let url = "https://byui-cse.github.io/cse341-course/lesson03/items.json";
-    res.render('pages/ta03', {
+    res.render('pages/teamActivities/ta03', {
         title: 'Team Activity 03',
         path: '/ta03', // For pug, EJS 
         data: dataJSON,
@@ -43,6 +43,6 @@ router.post('/search', (req, res, next) => {
     console.log(searchValue);
     dataJSON = originalDataJSON.filter(e => e.tags.includes(searchValue));
     console.log(dataJSON);
-    res.redirect('/ta03');
+    res.redirect('/teamActivities/03');
 });
 module.exports = router;

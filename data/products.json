@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "title": "Laptop Core",
+        "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "About this item Windows 10 brings back the Start Menu from Windows 7 and introduces new features, like the Edge Web browser that lets you markup Web pages on your screen. 15.6 QHD display with 165Hz refresh rate. The 2560 x 1440 resolution with DCI-P3 boasts impressive color and clarity. Energy-efficient LED backlight. 16GB system memory for intense multitasking and gaming. Reams of high-bandwidth DDR4 RAM to smoothly run your graphics-heavy PC games and video-editing applications, as well as numerous programs and browser tabs all at once. 1TB Solid State Drive (PCI-e). Save files fast and store more data. With massive amounts of storage and advanced communication power, PCI-e SSDs are great for major gaming applications, multiple servers, daily backups, and more. NVIDIA GeForce RTX 3070 graphics. Backed by 8GB GDDR6 dedicated video memory for an ultrafast, advanced GPU to fuel your games.",
+        "price": "1900"
+    },
+    {
+        "id": "2",
+        "title": "Laptop AMD",
+        "imageUrl": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGFwdG9wfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "15.6 inches Full HD (1920 x 1080) Widescreen LED backlit IPS Display; AMD Radeon Vega 3 Mobile Graphics. Ghost Manta Accessories including HDMI Cable, USB extension cord and Mouse Pad.AMD Ryzen 3 3200U 2.6 GHz up to 3.5 GHz; Get great performance for everything you do thanks to the new AMD Ryzen 3 processor. Featuring true machine intelligence and a newly designed efficient architecture the groundbreaking AMD Ryzen processor learns and adapts to your needs so you can achieve more.Upgraded to 8GB DDR4 RAM for full-power multitasking; Upgraded to 256GB PCIe SSD, Save files fast and store more data. With massive amounts of storage and advanced communication power PCI-e SSDs are great for major gaming applications multiple servers daily backups and more. Get up to 15x faster performance than a traditional hard drive. Ghost Manta Accessories including HDMI Cable, USB extension cord and Mouse Pad.",
+        "price": "1200"
+    },
+    {
+        "id": "3",
+        "title": "Keyboard",
+        "imageUrl": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8a2V5Ym9hcmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Full-sized Keyboard: Offers 104 keys, including navigational controls, full functions and a 10-key keypad. Plug and Play: Easily connects you to your PC or laptop right away so you can get working or playing. Ample Wire Length Connection: Keyboard's 5-ft. wired connection gives you plenty of room to setup your keyboard where you want it. Status Indicators: Includes key status indicators for Num Lock, Caps Lock, Scroll Lock functions. Built to Last: 3 year when purchased from the manufacturer or authorized reseller. Switch life of each key withstands up to 3,000,000 keystrokes",
+        "price": "20"
+    },
+    {
+        "id": "4",
+        "title": "Wireless Keyboard",
+        "imageUrl": "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGtleWJvYXJkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Wireless Mouse DPI 1600 in 3 levels- You can easily change the cursor sensitivity of this cordless mouse depending on your activities;usually 800 DPI for office, DPI 1200-1600 for 4K resolution monitor or entertainment like gaming at home. 2 polling rate: 125Hz and 250Hz; adjusted by pressing the right key and the wheel simultaneously at 3s for change.",
+        "price": "50"
+    },
+    {
+        "id": "5",
+        "title": "Mouse",
+        "imageUrl": "https://images.unsplash.com/photo-1586816879360-004f5b0c51e5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bW91c2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Comfortable Ergonomic DesignAfter thousands of samples of palm data we designed this ergonomic mouse. The mouse has a streamlined arc and thumb rest to help reduce the stress caused by prolonged use of the mouse. The side pits help reduce slippage and maximize your feeling of use!",
+        "price": "10"
+    },
+    {
+        "id": "6",
+        "title": "Wireless Mouse",
+        "imageUrl": "https://images.unsplash.com/photo-1615734986417-2468d1426621?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdXNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Save Battery LifeUp to 15 months battery life you don't need to worry about changing batteries frequently! This computer optical mouse will be in sleep mode in 8 minutes of inactivity. Press any button to wake it up. Note: powered by 1AA battery (not included).",
+        "price": "49.99"
+    },
+    {
+        "id": "7",
+        "title": "Router",
+        "imageUrl": "https://images.unsplash.com/photo-1606421753414-8d165c9d48e5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm91dGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Wave 2 Wireless Internet Router, 600Mbps on the 2.4GHz band and 1300Mbps on the 5GHz band, Works with Amazon Alexa. MU-MIMO Gigabit Router, Three simultaneous data streams help your devices achieve optimal performance by making communication more efficient. Boosted Wi-Fi Coverage, Beamforming technology delivers a highly efficient wireless connection, Long Range Wi-Fi",
+        "price": "50"
+    },
+    {
+        "id": "8",
+        "title": "Small Router",
+        "imageUrl": "https://images.unsplash.com/photo-1615146198235-769c1c3d3ae4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHJvdXRlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+        "description": "Smart Connect technology directs clients to less congested bands and Airtime Fairness optimizes usage, lag-free online gaming and streaming. TP-Link tether app - easily set up and manage your home network at home or remotely. Industry leading 2 year Warranty",
+        "price": "99.9"
+    }
+]

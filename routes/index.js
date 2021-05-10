@@ -4,7 +4,7 @@ const proveActivities = require('./proveRoutes');
 
 routes
     .use('/teamActivities',teamActivities)
-    .use('/proveAssignments',proveActivities)
+    .use('/proveActivities',proveActivities)
     .get('/',(req,res,next)=>{
         res.render('pages/index',{title: 'Wellcome to my CSE341',path:'/'});
     })

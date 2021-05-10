@@ -15,7 +15,7 @@ var books = [
 ];
 var error='';
 router.get('/',(req, res, next) => {
-    res.render('pages/prove02', { 
+    res.render('pages/proveActivities/prove02', { 
         title: 'Prove Activity 02', 
         books:books,
         path: '/prove02', // For pug, EJS 
@@ -28,7 +28,7 @@ router.post('/addBook',(req, res, next) => {
     let summary =  req.body.summary;
     let extraInfo =  req.body.extrainfo;
     books.push({name:name,summary:summary,extraInfo:extraInfo});
-    res.redirect('/prove02');
+    res.redirect('/proveActivities/02');
 });
 
 module.exports = router;

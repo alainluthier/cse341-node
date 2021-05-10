@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../includes/header.ejs %>
+  <% include ../../includes/header.ejs %>
 </head>
 
 <body>
-  <% include ../includes/nav.ejs %>
+  <% include ../../includes/nav.ejs %>
 <div class="jumbotron text-center">
   <div class="container">
     <h1><%= title %></h1>
@@ -14,7 +14,7 @@
 </div>
 <div class="container">
   <div style="padding: 0.5rem 2%;" class="prove02">
-    <form action="/prove02/addBook" method="POST">
+    <form action="/proveActivities/02/addBook" method="POST">
       <h3>Add New Book</h3>
       <label for="">Name</label>
       <input type="text" name="name" id=""> <br>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <% include ../includes/header.ejs %>
+  <% include ../../includes/header.ejs %>
 </head>
 
 <body>
-  <% include ../includes/nav.ejs %>
+  <% include ../../includes/nav.ejs %>
 <div class="jumbotron text-center">
   <div class="container">
     <h1><%= title %></h1>
@@ -15,7 +15,7 @@
 <div class="container">
   <div class="ta03">
     <div>
-      <form action="/ta03/search" method="post">
+      <form action="/teamActivities/03/search" method="post">
         <label>Search</label>
         <input type="text" name="search" id="search" size="50" value="<%=search%>">
         <button type="submit">Search</button>

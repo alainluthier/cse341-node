@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../includes/header.ejs %>
+</head>
+
+<body>
+    <% include ../../../includes/nav.ejs %>
+    <div class="container">
+        <h1><%=pageTitle%></h1>
+        <a href="/proveActivities/03/">Return Back</a>
+        <div class="prove03-view">
+            <section>
+                <img src="<%=product.imageUrl%>" alt="<%=product.title%>">
+                <div>
+                    <h2><%=product.title%></h2>
+                    <h3>Price: $<%=product.price%></h3>
+                    <p>Description: <%=product.description%></p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
