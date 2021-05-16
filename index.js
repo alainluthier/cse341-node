@@ -11,6 +11,7 @@
  * IMPORTANT: Make sure to run "npm install" in your root before "npm start"
  *******************************************************************************/
 // Our initial setup (package requires, port number setup)
+const cors = require('cors') // Place this with other requires (like 'path' and 'express')
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
@@ -19,7 +20,25 @@ const routes = require('./routes');
 const User = require('./models/user');
 const PORT = process.env.PORT || 5000 // So we can run on heroku || (OR) localhost:5000
 
+const corsOptions = {
+   origin: "https://<your_app_name>.herokuapp.com/",
+   optionsSuccessStatus: 200
+};
+
+const options = {
+   useUnifiedTopology: true,
+   useNewUrlParser: true,
+   useCreateIndex: true,
+   useFindAndModify: false,
+   family: 4
+};
+
+const MONGODB_URL = process.env.MONGODB_URL || "mongodb+srv://webadmin:kjfF2foda16U4hAm@cluster0.vhpz6.mongodb.net/test?retryWrites=true&w=majority";
+
 const app = express();
+
+app.use(cors(corsOptions));
+
 
 app.set('view engine', 'ejs');
 app.set('views', 'views');
@@ -35,7 +54,7 @@ app.use((req, res, next) => {
          .catch(err => console.log(err));
    });
 app.use('/', routes);
-mongoose.connect('mongodb+srv://webadmin:kjfF2foda16U4hAm@cluster0.vhpz6.mongodb.net/test?retryWrites=true&w=majority').then(result => {
+mongoose.connect(MONGODB_URL,options).then(result => {
    User.findOne().then(user => {
       if (!user) {
          const user = new User({
@@ -52,3 +71,12 @@ mongoose.connect('mongodb+srv://webadmin:kjfF2foda16U4hAm@cluster0.vhpz6.mongodb
 }).catch(err => {
    console.log(err);
 });
+
+
+
+
+
+
+
+
+                 
