@@ -97,3 +97,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.cart td, .cart th{
+  padding-right: 2rem;
+  padding-top: 1rem;
+}
+.options{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}

@@ -13,16 +13,42 @@
 // Our initial setup (package requires, port number setup)
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const path = require('path');
 const routes = require('./routes');
+const User = require('./models/user');
 const PORT = process.env.PORT || 5000 // So we can run on heroku || (OR) localhost:5000
 
 const app = express();
 
-app.use(express.static(path.join(__dirname, 'public')))
-   .set('views', path.join(__dirname, 'views'))
-   .set('view engine', 'ejs')
-   
-   .use(bodyParser({extended: false})) // For parsing the body of a POST
-   .use('/',routes)
-   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
+app.set('view engine', 'ejs');
+app.set('views', 'views');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use((req, res, next) => {
+      User.findById('60a0956e5a14e34988130c26')
+         .then(user => {
+            req.user = user;
+            next();
+         })
+         .catch(err => console.log(err));
+   });
+app.use('/', routes);
+mongoose.connect('mongodb+srv://webadmin:kjfF2foda16U4hAm@cluster0.vhpz6.mongodb.net/test?retryWrites=true&w=majority').then(result => {
+   User.findOne().then(user => {
+      if (!user) {
+         const user = new User({
+            name: 'Alain',
+            email: 'alain@test.com',
+            cart: {
+               items: []
+            }
+         });
+         user.save();
+      }
+   });
+   app.listen(5000);
+}).catch(err => {
+   console.log(err);
+});
