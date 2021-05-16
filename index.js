@@ -21,7 +21,7 @@ const User = require('./models/user');
 const PORT = process.env.PORT || 5000 // So we can run on heroku || (OR) localhost:5000
 
 const corsOptions = {
-   origin: "https://<your_app_name>.herokuapp.com/",
+   origin: "https://cse341-alain.herokuapp.com/",
    optionsSuccessStatus: 200
 };
 
