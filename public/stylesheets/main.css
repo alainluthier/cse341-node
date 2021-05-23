@@ -106,3 +106,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
 }
+.login-form{
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-control{
+  padding-bottom:5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
