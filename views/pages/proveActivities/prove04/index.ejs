@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../includes/header.ejs %>
+</head>
+
+<body>
+    <% include ../../../includes/nav.ejs %>
+    <div class="container">
+        <div class="prove03">
+            <div>
+                <form action="/proveActivities/04/search" method="post">
+                    <label style="display: none;">Search</label>
+                    <input style="display: none;" type="text" name="search" id="search" size="50" value="<%=search%>">
+                    <button style="display: none;" type="submit">Search</button>
+                    <a href="/proveActivities/04/cart">Shop Cart</a>
+                </form>
+                
+            </div>
+            <% for (e of products) {%>
+            <section>
+                <img src="<%=e.imageUrl%>" alt="<%=e.title%>">
+                <div>
+                    <h2><%=e.title%></h2>
+                    <h3>Price: $<%=e.price%></h3>
+                    <a href="/proveActivities/04/product/<%=e._id%>">Details</a>
+
+                    <form action="/proveActivities/04/cart" method="post">
+                        <button class="btn" type="submit">Add to Cart</button>
+                        <input type="hidden" name="productId" value="<%= e._id %>">
+                    </form>
+                </div>
+            </section>
+            <%}%>    
+      
+    </div>
+  </div>
+
+</body>
+</html>

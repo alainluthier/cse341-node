@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../includes/header.ejs %>
+</head>
+
+<body>
+    <% include ../../../includes/nav.ejs %>
+    <div class="container">
+        <div class="">
+            <h1><%=pageTitle%></h1>
+            <a href="/proveActivities/04/product">Return Back</a>
+            <table class="cart">
+                <thead>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </thead>
+                <tbody>
+                    <% products.forEach(p => { %>
+                    <tr>
+                        <td><%= p.productId.title %></td>
+                        <td class="options">
+                            <form action="/proveActivities/04/cart-update-decrease" method="POST">
+                                <input type="hidden" value="<%= p.productId._id %>" name="productId">
+                                <button type="submit">-</button>
+                            </form>
+                            <%= p.quantity %> 
+                            <form action="/proveActivities/04/cart-update-increase" method="POST">
+                                <input type="hidden" value="<%= p.productId._id %>" name="productId">
+                                <button type="submit">+</button>
+                            </form>
+                        </td>
+                        <td>
+                            <form action="/proveActivities/04/cart-delete-item" method="POST">
+                                <input type="hidden" value="<%= p.productId._id %>" name="productId">
+                                <button class="btn danger" type="submit">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

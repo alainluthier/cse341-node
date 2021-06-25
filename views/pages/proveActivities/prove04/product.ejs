@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../../includes/header.ejs %>
+</head>
+
+<body>
+    <% include ../../../includes/nav.ejs %>
+    <div class="container">
+        <h1><%=pageTitle%></h1>
+        <a href="/proveActivities/04/product">Return Back</a>
+        <div class="prove03-view">
+            <section>
+                <img src="<%=product.imageUrl%>" alt="<%=product.title%>">
+                <div>
+                    <h2><%=product.title%></h2>
+                    <h3>Price: $<%=product.price%></h3>
+                    <p>Description: <%=product.description%></p>
+                </div>
+                <form action="/proveActivities/04/cart" method="post">
+                    <button class="btn" type="submit">Add to Cart</button>
+                    <input type="hidden" name="productId" value="<%= product._id %>">
+                </form>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
