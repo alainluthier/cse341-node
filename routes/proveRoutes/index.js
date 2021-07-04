@@ -6,6 +6,7 @@ routes
     .use('/04',require('./prove04'))
     .use('/05',require('./prove05'))
     .use('/10',require('./prove10'))
+    .use('/11',require('./prove11'))
     /*.get('/',(req,res,next)=>{
         res.render('pages/proveActivities/',{
             pageTitle: 'Prove Activities',
